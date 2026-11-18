@@ -1,0 +1,678 @@
+
+<style>
+/* MULAGI VOCATIONAL TRAINING SCHOOL - GALLERY PAGE */
+.mulagi-gallery {
+    --mg-green: #123d2b;
+    --mg-dark: #092719;
+    --mg-gold: #d8a63c;
+    --mg-light: #f5f7f3;
+    --mg-text: #25352d;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--mg-text);
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    line-height: 1.7;
+}
+
+.mulagi-gallery * {
+    box-sizing: border-box;
+}
+
+.mulagi-gallery img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.mulagi-gallery a {
+    text-decoration: none;
+}
+
+/* HEADER */
+.mulagi-gallery .mg-header {
+    background: var(--mg-dark);
+    color: #fff;
+    padding: 22px 5%;
+}
+
+.mulagi-gallery .mg-brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mulagi-gallery .mg-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+}
+
+.mulagi-gallery .mg-brand h1 {
+    color: #fff;
+    font-size: 25px;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 800;
+}
+
+.mulagi-gallery .mg-brand p {
+    margin: 5px 0 0;
+    color: var(--mg-gold);
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+.mulagi-gallery .mg-nav {
+    background: var(--mg-green);
+    padding: 14px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+}
+
+.mulagi-gallery .mg-nav a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px 4px;
+    transition: 0.3s;
+}
+
+.mulagi-gallery .mg-nav a:hover,
+.mulagi-gallery .mg-nav a.active {
+    color: var(--mg-gold);
+    border-bottom: 2px solid var(--mg-gold);
+}
+
+/* INTRODUCTION */
+.mulagi-gallery .mg-heading {
+    max-width: 1100px;
+    margin: auto;
+    padding: 85px 25px 55px;
+    text-align: center;
+}
+
+.mulagi-gallery .mg-eyebrow {
+    color: #b38324;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.mulagi-gallery .mg-heading h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    color: var(--mg-green);
+    line-height: 1.2;
+    margin: 0 auto 20px;
+}
+
+.mulagi-gallery .mg-heading > p:last-child {
+    max-width: 750px;
+    margin: auto;
+    color: #59675e;
+    font-size: 17px;
+}
+
+/* FEATURE SECTION */
+.mulagi-gallery .mg-showcase {
+    max-width: 1200px;
+    margin: 0 auto 85px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.mulagi-gallery .mg-feature {
+    margin: 0;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.mulagi-gallery .mg-feature img {
+    height: 100%;
+}
+
+.mulagi-gallery .mg-story h2 {
+    font-size: 36px;
+    color: var(--mg-green);
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.mulagi-gallery .mg-story > p {
+    color: #59675e;
+    font-size: 16px;
+}
+
+.mulagi-gallery .mg-values {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.mulagi-gallery .mg-values li {
+    border-bottom: 1px solid #e3e8e2;
+    padding: 14px 0;
+    color: var(--mg-green);
+    font-weight: bold;
+}
+
+.mulagi-gallery .mg-values span {
+    color: var(--mg-gold);
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.mulagi-gallery .mg-button {
+    display: inline-block;
+    background: var(--mg-green);
+    color: #fff;
+    padding: 15px 26px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.mulagi-gallery .mg-button:hover {
+    background: var(--mg-gold);
+    color: #102b1e;
+}
+
+/* ACTIVITIES */
+.mulagi-gallery .mg-activities {
+    background: var(--mg-light);
+    padding: 75px 5%;
+}
+
+.mulagi-gallery .mg-activities-heading {
+    max-width: 1100px;
+    margin: auto auto 45px;
+    text-align: center;
+}
+
+.mulagi-gallery .mg-activities-heading h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    color: var(--mg-green);
+    margin: 0 0 15px;
+}
+
+.mulagi-gallery .mg-activities-heading > p:last-child {
+    color: #657169;
+}
+
+.mulagi-gallery .mg-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.mulagi-gallery .mg-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mulagi-gallery .mg-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.mulagi-gallery .mg-photo {
+    height: 240px;
+    overflow: hidden;
+}
+
+.mulagi-gallery .mg-photo img {
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.mulagi-gallery .mg-card:hover .mg-photo img {
+    transform: scale(1.06);
+}
+
+.mulagi-gallery .mg-caption {
+    padding: 22px;
+}
+
+.mulagi-gallery .mg-caption h3 {
+    color: var(--mg-green);
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.mulagi-gallery .mg-caption p {
+    color: #66736b;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* CONTACT PROMO */
+.mulagi-gallery .mg-note {
+    max-width: 1200px;
+    margin: 75px auto;
+    padding: 45px;
+    background: var(--mg-green);
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.mulagi-gallery .mg-note h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 12px;
+}
+
+.mulagi-gallery .mg-note p {
+    color: #e2eae4;
+    margin: 0;
+}
+
+.mulagi-gallery .mg-note .mg-button {
+    background: var(--mg-gold);
+    color: var(--mg-dark);
+    white-space: nowrap;
+}
+
+.mulagi-gallery .mg-note .mg-button:hover {
+    background: #fff;
+}
+
+/* FOOTER */
+.mulagi-gallery .mg-footer {
+    background: #092719;
+    color: #fff;
+    padding: 65px 5% 40px;
+}
+
+.mulagi-gallery .mg-footer-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.2fr 0.8fr;
+    gap: 35px;
+}
+
+.mulagi-gallery .mg-footer-brand {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.mulagi-gallery .mg-footer-brand img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.mulagi-gallery .mg-footer h3 {
+    font-size: 17px;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.mulagi-gallery .mg-footer h4 {
+    color: var(--mg-gold);
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+}
+
+.mulagi-gallery .mg-footer p {
+    color: #cbd8ce;
+    font-size: 13px;
+    margin: 0;
+}
+
+.mulagi-gallery .mg-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mulagi-gallery .mg-footer li {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #d1ded5;
+    overflow-wrap: anywhere;
+}
+
+.mulagi-gallery .mg-footer a {
+    color: #d1ded5;
+    transition: 0.3s;
+}
+
+.mulagi-gallery .mg-footer a:hover {
+    color: var(--mg-gold);
+}
+
+.mulagi-gallery .mg-bottom {
+    background: #061c12;
+    padding: 20px;
+    text-align: center;
+    color: #cbd8ce;
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 900px) {
+    .mulagi-gallery .mg-showcase {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .mulagi-gallery .mg-feature {
+        height: 400px;
+    }
+
+    .mulagi-gallery .mg-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mulagi-gallery .mg-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .mulagi-gallery .mg-header {
+        padding: 20px 15px;
+    }
+
+    .mulagi-gallery .mg-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mulagi-gallery .mg-brand h1 {
+        font-size: 20px;
+    }
+
+    .mulagi-gallery .mg-nav {
+        gap: 12px;
+        padding: 15px 10px;
+    }
+
+    .mulagi-gallery .mg-nav a {
+        font-size: 11px;
+    }
+
+    .mulagi-gallery .mg-heading {
+        padding: 55px 20px 35px;
+    }
+
+    .mulagi-gallery .mg-heading h2 {
+        font-size: 33px;
+    }
+
+    .mulagi-gallery .mg-showcase {
+        padding: 0 18px;
+        margin-bottom: 55px;
+    }
+
+    .mulagi-gallery .mg-feature {
+        height: 300px;
+    }
+
+    .mulagi-gallery .mg-story h2 {
+        font-size: 29px;
+    }
+
+    .mulagi-gallery .mg-activities {
+        padding: 55px 18px;
+    }
+
+    .mulagi-gallery .mg-activities-heading h2 {
+        font-size: 29px;
+    }
+
+    .mulagi-gallery .mg-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mulagi-gallery .mg-photo {
+        height: 250px;
+    }
+
+    .mulagi-gallery .mg-note {
+        margin: 50px 18px;
+        padding: 30px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mulagi-gallery .mg-note h2 {
+        font-size: 26px;
+    }
+
+    .mulagi-gallery .mg-footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="mulagi-gallery">
+
+    <!-- SCHOOL HEADER -->
+    <header class="mg-header">
+        <div class="mg-brand">
+            <img class="mg-logo"
+                 src="PASTE-YOUR-LOGO-URL-HERE"
+                 alt="Mulagi Vocational Training School logo">
+            <div>
+                <h1>MULAGI VOCATIONAL TRAINING SCHOOL</h1>
+                <p>SUCCESS THROUGH SELF RELIANCE</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="mg-nav" aria-label="Main navigation">
+        <a href="/">HOME</a>
+        <a href="/about-us/">ABOUT US</a>
+        <a href="/academics/">ACADEMICS</a>
+        <a href="/gallery/" class="active">GALLERY</a>
+        <a href="/contact-us/">CONTACT US</a>
+    </nav>
+
+    <!-- GALLERY INTRODUCTION -->
+    <section class="mg-heading">
+        <p class="mg-eyebrow">LIFE AT MULAGI</p>
+        <h2>A glimpse of learning and community.</h2>
+        <p>
+            Get to know our school through the people at its heart.
+            This is one moment from learner life at Mulagi
+            Vocational Training School.
+        </p>
+    </section>
+
+    <!-- SCHOOL COMMUNITY -->
+    <section class="mg-showcase">
+
+        <figure class="mg-feature">
+            <img src="PASTE-YOUR-STUDENT-PHOTO-URL-HERE"
+                 alt="Students standing together in a school setting">
+        </figure>
+
+        <div class="mg-story">
+            <p class="mg-eyebrow">OUR SCHOOL COMMUNITY</p>
+            <h2>Every learner has a place to grow.</h2>
+            <p>
+                At Mulagi, education and practical skills go hand in hand.
+                We value a supportive environment where learners can build
+                confidence, work together, and prepare for a self-reliant future.
+            </p>
+
+            <ul class="mg-values">
+                <li><span>01</span> Practical learning</li>
+                <li><span>02</span> Confidence and teamwork</li>
+                <li><span>03</span> Skills for the future</li>
+            </ul>
+
+            <a class="mg-button" href="/academics/">
+                Explore our academics &rarr;
+            </a>
+        </div>
+
+    </section>
+
+    <!-- PRACTICAL ACTIVITIES -->
+    <section class="mg-activities">
+
+        <div class="mg-activities-heading">
+            <p class="mg-eyebrow">LEARNING IN ACTION</p>
+            <h2>See our students build practical skills.</h2>
+            <p>Explore the practical skills students develop at Mulagi.</p>
+        </div>
+
+        <div class="mg-grid">
+
+            <!-- BAKING -->
+            <figure class="mg-card">
+                <div class="mg-photo">
+                    <img src="PASTE-YOUR-BAKING-PHOTO-URL-HERE"
+                         alt="Students practising practical baking skills together">
+                </div>
+                <figcaption class="mg-caption">
+                    <h3>Baking</h3>
+                    <p>Students learning and creating in the kitchen.</p>
+                </figcaption>
+            </figure>
+
+            <!-- SEWING -->
+            <figure class="mg-card">
+                <div class="mg-photo">
+                    <img src="PASTE-YOUR-TAILORING-PHOTO-URL-HERE"
+                         alt="Students practising sewing with sewing machines">
+                </div>
+                <figcaption class="mg-caption">
+                    <h3>Sewing &amp; Garment Making</h3>
+                    <p>Students practising sewing and garment-making skills.</p>
+                </figcaption>
+            </figure>
+
+            <!-- COMPUTER SKILLS -->
+            <figure class="mg-card">
+                <div class="mg-photo">
+                    <img src="PASTE-YOUR-COMPUTER-PHOTO-URL-HERE"
+                         alt="Students learning computer skills in a computer lab">
+                </div>
+                <figcaption class="mg-caption">
+                    <h3>Computer Skills</h3>
+                    <p>Students developing confidence with computers.</p>
+                </figcaption>
+            </figure>
+
+            <!-- HOTEL MANAGEMENT -->
+            <figure class="mg-card">
+                <div class="mg-photo">
+                    <img src="PASTE-YOUR-HOTEL-PHOTO-URL-HERE"
+                         alt="Students learning hotel management and hospitality skills">
+                </div>
+                <figcaption class="mg-caption">
+                    <h3>Hotel Management</h3>
+                    <p>Students developing hospitality and hotel service skills.</p>
+                </figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <!-- CONTACT PROMOTION -->
+    <section class="mg-note">
+        <div>
+            <p class="mg-eyebrow">SHARE A SCHOOL MOMENT</p>
+            <h2>Have photos of students learning?</h2>
+            <p>Contact the school to share photos for these gallery spaces.</p>
+        </div>
+
+        <a class="mg-button" href="/contact-us/">
+            Get in touch &rarr;
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mg-footer">
+        <div class="mg-footer-grid">
+
+            <div class="mg-footer-brand">
+                <img src="PASTE-YOUR-LOGO-URL-HERE"
+                     alt="Mulagi logo">
+                <div>
+                    <h3>MULAGI VOCATIONAL TRAINING SCHOOL</h3>
+                    <p>Discipline . Knowledge . A brighter future</p>
+                </div>
+            </div>
+
+            <div>
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about-us/">ABOUT US</a></li>
+                    <li><a href="/academics/">ACADEMICS</a></li>
+                    <li><a href="/gallery/">GALLERY</a></li>
+                    <li><a href="/contact-us/">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CONTACT US</h4>
+                <ul>
+                    <li>Mulagi</li>
+                    <li>
+                        <a href="mailto:info@mulagivocationaltraining.ac.ug">
+                            info@mulagivocationaltraining.ac.ug
+                        </a>
+                    </li>
+                    <li>Mon - Fri: 7:30am - 5:30pm</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>FOLLOW US</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <div class="mg-bottom">
+        <p>&copy; 2026 Mulagi Vocational Training School.
+        Educate a girl child.</p>
+    </div>
+
+</div>

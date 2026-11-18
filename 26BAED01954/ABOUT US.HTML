@@ -1,0 +1,440 @@
+
+<style>
+/* MULAGI ABOUT US PAGE */
+.mulagi-about {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+.mulagi-about * {
+    box-sizing: border-box;
+}
+.mulagi-about .ma-header {
+    background: #064e36;
+    color: white;
+    padding: 20px;
+}
+.mulagi-about .ma-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    text-align: center;
+}
+.mulagi-about .ma-brand img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.mulagi-about .ma-brand h1 {
+    color: white;
+    font-size: 26px;
+    margin: 5px 0;
+}
+.mulagi-about .ma-brand p {
+    color: #f1c40f;
+    letter-spacing: 2px;
+    margin: 8px 0;
+}
+.mulagi-about .ma-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+.mulagi-about .ma-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.mulagi-about .ma-nav a:hover,
+.mulagi-about .ma-nav .ma-active {
+    background: #f1c40f;
+    color: #064e36;
+}
+
+/* HERO */
+.mulagi-about .ma-hero {
+    padding: 80px 25px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        rgba(0,60,40,0.78),
+        rgba(0,60,40,0.78)
+    ), url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+    background-position: center;
+    background-size: cover;
+}
+.mulagi-about .ma-hero .ma-eyebrow {
+    color: #f1c40f;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.mulagi-about .ma-hero h2 {
+    font-size: 40px;
+    color: white;
+    margin: 15px 0;
+}
+.mulagi-about .ma-hero p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ABOUT INTRO */
+.mulagi-about .ma-intro {
+    padding: 55px 25px;
+    text-align: center;
+    background: white;
+}
+.mulagi-about .ma-intro h2 {
+    color: #064e36;
+    font-size: 30px;
+}
+.mulagi-about .ma-intro p {
+    max-width: 900px;
+    margin: 15px auto;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* CARDS */
+.mulagi-about .ma-sections {
+    background: #f5f7f5;
+    padding: 60px 20px;
+}
+.mulagi-about .ma-sections h2 {
+    text-align: center;
+    color: #064e36;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.mulagi-about .ma-card-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.mulagi-about .ma-card {
+    flex: 1 1 300px;
+    max-width: 370px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-bottom: 5px solid #f1c40f;
+}
+.mulagi-about .ma-card h3 {
+    text-align: center;
+    color: #064e36;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.mulagi-about .ma-card p {
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* FOOTER */
+.mulagi-about .ma-footer {
+    background: #043526;
+    color: white;
+    padding: 45px 20px;
+}
+.mulagi-about .ma-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+.mulagi-about .ma-footer-column {
+    flex: 1 1 220px;
+}
+.mulagi-about .ma-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.mulagi-about .ma-footer-brand img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+.mulagi-about .ma-footer h3,
+.mulagi-about .ma-footer h4 {
+    color: #f1c40f;
+}
+.mulagi-about .ma-footer h3 {
+    font-size: 18px;
+}
+.mulagi-about .ma-footer ul {
+    list-style: none;
+    padding: 0;
+}
+.mulagi-about .ma-footer li {
+    margin: 12px 0;
+}
+.mulagi-about .ma-footer a {
+    color: white;
+    text-decoration: none;
+}
+.mulagi-about .ma-footer a:hover {
+    color: #f1c40f;
+}
+.mulagi-about .ma-bottom {
+    background: #02271c;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    .mulagi-about .ma-brand h1 {
+        font-size: 21px;
+    }
+    .mulagi-about .ma-nav {
+        flex-direction: column;
+    }
+    .mulagi-about .ma-nav a {
+        text-align: center;
+    }
+    .mulagi-about .ma-hero h2 {
+        font-size: 28px;
+    }
+    .mulagi-about .ma-hero p {
+        font-size: 16px;
+    }
+    .mulagi-about .ma-footer-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+<div class="mulagi-about">
+
+    <!-- HEADER -->
+    <header class="ma-header">
+
+        <div class="ma-brand">
+            <img src="LOGO.png"
+                 alt="Mulagi Vocational Training School Logo">
+
+            <div>
+                <h1>MULAGI VOCATIONAL TRAINING SCHOOL</h1>
+                <p>SUCCESS THROUGH SELF RELIANCE</p>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="ma-nav" aria-label="Main navigation">
+            <a href="/">HOME</a>
+            <a href="/about-us/" class="ma-active">ABOUT US</a>
+            <a href="/academics/">ACADEMICS</a>
+            <a href="/gallery/">GALLERY</a>
+            <a href="/contact-us/">CONTACT US</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="ma-hero">
+
+        <p class="ma-eyebrow">ABOUT OUR SCHOOL</p>
+
+        <h2>Learning Skills. Building Futures.</h2>
+
+        <p>
+            Mulagi Vocational Training School brings education and
+            practical skills together, helping learners grow in
+            confidence and become self-reliant members of their
+            communities.
+        </p>
+
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="ma-intro">
+
+        <h2>WHO WE ARE</h2>
+
+        <p>
+            Mulagi Vocational Training School is committed to providing
+            quality education and vocational training to learners.
+            We believe that education and practical skills are important
+            tools for improving lives, promoting independence and
+            creating opportunities for a better future.
+        </p>
+
+        <p>
+            Through discipline, knowledge, teamwork and practical
+            learning, we encourage learners to discover their talents,
+            develop their abilities and become responsible members
+            of society.
+        </p>
+
+    </section>
+
+    <!-- MISSION, VISION, HISTORY AND MANAGEMENT -->
+    <section class="ma-sections">
+
+        <h2>ABOUT MULAGI VOCATIONAL TRAINING SCHOOL</h2>
+
+        <div class="ma-card-container">
+
+            <article class="ma-card">
+                <h3>OUR MISSION</h3>
+                <p>
+                    To equip learners with meaningful education,
+                    practical skills, and the confidence to build
+                    better futures for themselves and their communities.
+                </p>
+            </article>
+
+            <article class="ma-card">
+                <h3>OUR VISION</h3>
+                <p>
+                    A future where every learner can use knowledge,
+                    skill, and strong character to contribute positively
+                    to society and achieve personal growth.
+                </p>
+            </article>
+
+            <article class="ma-card">
+                <h3>OUR VALUES</h3>
+                <p>
+                    Discipline, knowledge, teamwork, excellence,
+                    respect, responsibility and self-reliance guide
+                    the way we learn, teach and work together.
+                </p>
+            </article>
+
+            <article class="ma-card">
+                <h3>SCHOOL HISTORY</h3>
+                <p>
+                    Founded in 1985 by the Eucharistic Handmaids
+                    Sisters, Mulagi Vocational Training School was
+                    established when there was no other vocational
+                    school to serve the community. The school
+                    continues to equip learners with practical skills,
+                    knowledge and opportunities for a self-reliant future.
+                </p>
+            </article>
+
+            <article class="ma-card">
+                <h3>SCHOOL MANAGEMENT</h3>
+                <p>
+                    The management team coordinates school activities
+                    and works with staff, families and the community
+                    to support learners, promote discipline and ensure
+                    the smooth running of the school.
+                </p>
+            </article>
+
+            <article class="ma-card">
+                <h3>SCHOOL LEADERSHIP</h3>
+                <p>
+                    School leaders set direction, guide staff,
+                    support teaching and learning, and foster
+                    a positive environment where every learner
+                    can thrive and achieve her potential.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="ma-footer">
+
+        <div class="ma-footer-container">
+
+            <!-- BRAND -->
+            <div class="ma-footer-column">
+
+                <div class="ma-footer-brand">
+
+                    <img src="LOGO.png" alt="Mulagi School Logo">
+
+                    <div>
+                        <h3>MULAGI VOCATIONAL TRAINING SCHOOL</h3>
+                        <p>Discipline . Knowledge . A Brighter Future</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- LINKS -->
+            <div class="ma-footer-column">
+
+                <h4>QUICK LINKS</h4>
+
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about-us/">ABOUT US</a></li>
+                    <li><a href="/academics/">ACADEMICS</a></li>
+                    <li><a href="/gallery/">GALLERY</a></li>
+                    <li><a href="/contact-us/">CONTACT US</a></li>
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+            <div class="ma-footer-column">
+
+                <h4>CONTACT US</h4>
+
+                <ul>
+                    <li>Location: Mulagi, Uganda</li>
+                    <li>
+                        <a href="mailto:info@mulagivocationaltraining.ac.ug">
+                        info@mulagivocationaltraining.ac.ug
+                        </a>
+                    </li>
+                    <li>Monday - Friday: 7:30am - 5:30pm</li>
+                </ul>
+
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="ma-footer-column">
+
+                <h4>FOLLOW US</h4>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
+                    <li>TikTok</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <div class="ma-bottom">
+
+        <p>
+            &copy; 2026 Mulagi Vocational Training School.
+            Educate a girl child.
+        </p>
+
+    </div>
+
+</div>

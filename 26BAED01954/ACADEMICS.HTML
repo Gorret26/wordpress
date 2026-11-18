@@ -1,0 +1,655 @@
+
+<style>
+/* MULAGI ACADEMICS PAGE */
+.mulagi-academics {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+.mulagi-academics * {
+    box-sizing: border-box;
+}
+.mulagi-academics .mc-header {
+    background: #064e36;
+    color: white;
+    padding: 20px;
+}
+.mulagi-academics .mc-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.mulagi-academics .mc-brand img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.mulagi-academics .mc-brand h1 {
+    color: white;
+    font-size: 26px;
+    margin: 5px 0;
+}
+.mulagi-academics .mc-brand p {
+    color: #f1c40f;
+    letter-spacing: 2px;
+    margin: 8px 0;
+}
+.mulagi-academics .mc-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+.mulagi-academics .mc-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.mulagi-academics .mc-nav a:hover,
+.mulagi-academics .mc-nav .mc-active {
+    background: #f1c40f;
+    color: #064e36;
+}
+
+/* HERO */
+.mulagi-academics .mc-hero {
+    padding: 80px 25px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        rgba(0,60,40,0.78),
+        rgba(0,60,40,0.78)
+    ), url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+}
+.mulagi-academics .mc-eyebrow {
+    color: #f1c40f;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.mulagi-academics .mc-hero h2 {
+    color: white;
+    font-size: 40px;
+    margin: 15px 0;
+}
+.mulagi-academics .mc-hero p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* COURSES */
+.mulagi-academics .mc-courses {
+    background: #f5f7f5;
+    padding: 60px 20px;
+}
+.mulagi-academics .mc-courses > h2 {
+    color: #064e36;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.mulagi-academics .mc-course-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 35px;
+    line-height: 1.8;
+}
+.mulagi-academics .mc-card-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.mulagi-academics .mc-card {
+    flex: 1 1 280px;
+    max-width: 370px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-bottom: 5px solid #f1c40f;
+}
+.mulagi-academics .mc-card h3 {
+    color: #064e36;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.mulagi-academics .mc-card p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* LEARNING JOURNEY */
+.mulagi-academics .mc-journey {
+    background: white;
+    padding: 60px 20px;
+}
+.mulagi-academics .mc-journey-heading {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+.mulagi-academics .mc-journey-heading h2 {
+    color: #064e36;
+    font-size: 30px;
+}
+.mulagi-academics .mc-journey-heading p {
+    line-height: 1.8;
+}
+.mulagi-academics .mc-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+.mulagi-academics .mc-step {
+    flex: 1 1 280px;
+    max-width: 370px;
+    background: #f5f7f5;
+    padding: 30px;
+    border-radius: 12px;
+}
+.mulagi-academics .mc-step-number {
+    display: inline-block;
+    background: #064e36;
+    color: #f1c40f;
+    padding: 12px 17px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.mulagi-academics .mc-step h3 {
+    color: #064e36;
+}
+.mulagi-academics .mc-step p {
+    line-height: 1.8;
+}
+
+/* SUPPORT AND FAQ */
+.mulagi-academics .mc-info {
+    padding: 60px 20px;
+    background: #f5f7f5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+.mulagi-academics .mc-support,
+.mulagi-academics .mc-faq {
+    flex: 1 1 400px;
+    max-width: 570px;
+    padding: 35px;
+    border-radius: 12px;
+}
+.mulagi-academics .mc-support {
+    background: #064e36;
+    color: white;
+}
+.mulagi-academics .mc-support h2 {
+    color: white;
+    font-size: 30px;
+}
+.mulagi-academics .mc-support p {
+    line-height: 1.8;
+}
+.mulagi-academics .mc-cta {
+    display: inline-block;
+    background: #f1c40f;
+    color: #064e36;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 22px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.mulagi-academics .mc-cta:hover {
+    background: white;
+}
+.mulagi-academics .mc-faq {
+    background: white;
+}
+.mulagi-academics .mc-faq h2 {
+    color: #064e36;
+    font-size: 30px;
+}
+.mulagi-academics .mc-faq details {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+.mulagi-academics .mc-faq summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #064e36;
+}
+.mulagi-academics .mc-faq details p {
+    line-height: 1.7;
+}
+.mulagi-academics .mc-faq a {
+    color: #064e36;
+}
+
+/* FOOTER */
+.mulagi-academics .mc-footer {
+    background: #043526;
+    color: white;
+    padding: 45px 20px;
+}
+.mulagi-academics .mc-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+.mulagi-academics .mc-footer-column {
+    flex: 1 1 220px;
+}
+.mulagi-academics .mc-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.mulagi-academics .mc-footer-brand img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+.mulagi-academics .mc-footer h3,
+.mulagi-academics .mc-footer h4 {
+    color: #f1c40f;
+}
+.mulagi-academics .mc-footer h3 {
+    font-size: 18px;
+}
+.mulagi-academics .mc-footer ul {
+    list-style: none;
+    padding: 0;
+}
+.mulagi-academics .mc-footer li {
+    margin: 12px 0;
+}
+.mulagi-academics .mc-footer a {
+    color: white;
+    text-decoration: none;
+}
+.mulagi-academics .mc-footer a:hover {
+    color: #f1c40f;
+}
+.mulagi-academics .mc-bottom {
+    background: #02271c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    .mulagi-academics .mc-brand h1 {
+        font-size: 21px;
+    }
+    .mulagi-academics .mc-nav {
+        flex-direction: column;
+    }
+    .mulagi-academics .mc-nav a {
+        text-align: center;
+    }
+    .mulagi-academics .mc-hero h2 {
+        font-size: 28px;
+    }
+    .mulagi-academics .mc-hero p {
+        font-size: 16px;
+    }
+    .mulagi-academics .mc-footer-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+<div class="mulagi-academics">
+
+    <!-- HEADER -->
+    <header class="mc-header">
+
+        <div class="mc-brand">
+            <img src="LOGO.png"
+                 alt="Mulagi Vocational Training School Logo">
+
+            <div>
+                <h1>MULAGI VOCATIONAL TRAINING SCHOOL</h1>
+                <p>SUCCESS THROUGH SELF RELIANCE</p>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="mc-nav" aria-label="Main navigation">
+            <a href="/">HOME</a>
+            <a href="/about-us/">ABOUT US</a>
+            <a href="/academics/" class="mc-active">ACADEMICS</a>
+            <a href="/gallery/">GALLERY</a>
+            <a href="/contact-us/">CONTACT US</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="mc-hero">
+
+        <p class="mc-eyebrow">LEARN BY DOING</p>
+
+        <h2>Skills for Today. Confidence for Life.</h2>
+
+        <p>
+            At Mulagi, learners build practical skills, grow in
+            confidence, and prepare for a more self-reliant future.
+            We combine knowledge with practical learning to help
+            learners develop skills that can be used in everyday life
+            and the workplace.
+        </p>
+
+    </section>
+
+    <!-- COURSES -->
+    <section class="mc-courses">
+
+        <h2>OUR COURSES AND SKILLS</h2>
+
+        <p class="mc-course-intro">
+            Our vocational programmes help learners develop useful
+            skills, creativity, confidence and knowledge. Through
+            practical training and guidance, learners prepare for
+            employment, entrepreneurship and independent living.
+        </p>
+
+        <div class="mc-card-container">
+
+            <article class="mc-card">
+                <h3>HOTEL MANAGEMENT</h3>
+                <p>
+                    Learners develop practical skills in hospitality,
+                    customer care, food service, housekeeping and
+                    hotel operations to prepare for careers in the
+                    hospitality industry.
+                </p>
+            </article>
+
+            <article class="mc-card">
+                <h3>TAILORING &amp; GARMENT MAKING</h3>
+                <p>
+                    Learners explore garment construction, fabric
+                    selection, measurements, sewing, fashion design
+                    and professional tailoring techniques.
+                </p>
+            </article>
+
+            <article class="mc-card">
+                <h3>SECRETARIAL STUDIES</h3>
+                <p>
+                    Learners build communication, office administration,
+                    document preparation, record keeping, typing
+                    and office-support skills.
+                </p>
+            </article>
+
+            <article class="mc-card">
+                <h3>BAKING</h3>
+                <p>
+                    Learners acquire practical baking skills,
+                    including cake making, bread preparation,
+                    pastries, food handling and presentation.
+                    They also develop creativity and business skills.
+                </p>
+            </article>
+
+            <article class="mc-card">
+                <h3>COMPUTER SKILLS</h3>
+                <p>
+                    Learners gain knowledge in computer operation,
+                    typing, word processing, internet use,
+                    presentations and basic digital skills
+                    for education and work.
+                </p>
+            </article>
+
+            <article class="mc-card">
+                <h3>LEARN BY DOING</h3>
+                <p>
+                    Our learning approach combines classroom
+                    knowledge with hands-on practice, guidance,
+                    teamwork and practical activities that
+                    prepare learners for real-life situations.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- LEARNING JOURNEY -->
+    <section class="mc-journey">
+
+        <div class="mc-journey-heading">
+
+            <p class="mc-eyebrow">THE LEARNING EXPERIENCE</p>
+
+            <h2>A Path from Learning to Independence</h2>
+
+            <p>
+                Every learner grows at her own pace. Our school values
+                practical ability, supportive relationships and the
+                confidence to keep moving forward.
+            </p>
+
+        </div>
+
+        <div class="mc-steps">
+
+            <article class="mc-step">
+
+                <span class="mc-step-number">01</span>
+
+                <h3>BUILD UNDERSTANDING</h3>
+
+                <p>
+                    Learners begin by gaining knowledge, understanding
+                    important concepts and receiving guidance from
+                    instructors to help them develop a strong foundation.
+                </p>
+
+            </article>
+
+            <article class="mc-step">
+
+                <span class="mc-step-number">02</span>
+
+                <h3>LEARN THROUGH PRACTICE</h3>
+
+                <p>
+                    Learners put their knowledge into action through
+                    practical activities, demonstrations, exercises
+                    and projects that help them improve their abilities.
+                </p>
+
+            </article>
+
+            <article class="mc-step">
+
+                <span class="mc-step-number">03</span>
+
+                <h3>PREPARE FOR WHAT'S NEXT</h3>
+
+                <p>
+                    Learners develop teamwork, discipline, confidence
+                    and practical abilities that can help them pursue
+                    employment, business opportunities and further learning.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- SUPPORT AND FAQ -->
+    <section class="mc-info">
+
+        <div class="mc-support">
+
+            <p class="mc-eyebrow">HERE TO HELP</p>
+
+            <h2>Get the Right Information Before You Apply.</h2>
+
+            <p>
+                Choosing a course is an important step in building
+                your future. Our school can help you find out which
+                programmes are available and what you need to know
+                before enrolling.
+            </p>
+
+            <a class="mc-cta" href="/contact-us/">
+                TALK TO THE SCHOOL &rarr;
+            </a>
+
+        </div>
+
+        <div class="mc-faq">
+
+            <p class="mc-eyebrow">QUICK QUESTIONS</p>
+
+            <h2>Planning Your Studies?</h2>
+
+            <details>
+                <summary>Which courses are available?</summary>
+                <p>
+                    Contact the school to find out about the current
+                    courses and programmes available.
+                </p>
+            </details>
+
+            <details>
+                <summary>What are the entry requirements?</summary>
+                <p>
+                    Ask the school about the current entry requirements
+                    and the documents you need to bring when applying.
+                </p>
+            </details>
+
+            <details>
+                <summary>How long does a course take?</summary>
+                <p>
+                    Course duration depends on the programme.
+                    Contact the school to confirm the duration
+                    of the course you are interested in.
+                </p>
+            </details>
+
+            <details>
+                <summary>How do I take the next step?</summary>
+                <p>
+                    Contact the school to discuss available courses,
+                    application steps and when to visit.
+                </p>
+            </details>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mc-footer">
+
+        <div class="mc-footer-container">
+
+            <!-- SCHOOL BRAND -->
+            <div class="mc-footer-column">
+
+                <div class="mc-footer-brand">
+
+                    <img src="LOGO.png" alt="Mulagi School Logo">
+
+                    <div>
+                        <h3>MULAGI VOCATIONAL TRAINING SCHOOL</h3>
+                        <p>Discipline . Knowledge . A Brighter Future</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="mc-footer-column">
+
+                <h4>QUICK LINKS</h4>
+
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about-us/">ABOUT US</a></li>
+                    <li><a href="/academics/">ACADEMICS</a></li>
+                    <li><a href="/gallery/">GALLERY</a></li>
+                    <li><a href="/contact-us/">CONTACT US</a></li>
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+            <div class="mc-footer-column">
+
+                <h4>CONTACT US</h4>
+
+                <ul>
+                    <li>Location: Mulagi, Uganda</li>
+                    <li>
+                        <a href="mailto:info@mulagivocationaltraining.ac.ug">
+                        info@mulagivocationaltraining.ac.ug
+                        </a>
+                    </li>
+                    <li>Monday - Friday: 7:30am - 5:30pm</li>
+                </ul>
+
+            </div>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="mc-footer-column">
+
+                <h4>FOLLOW US</h4>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
+                    <li>TikTok</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <div class="mc-bottom">
+
+        <p>
+            &copy; 2026 Mulagi Vocational Training School.
+            Educate a girl child.
+        </p>
+
+    </div>
+
+</div>

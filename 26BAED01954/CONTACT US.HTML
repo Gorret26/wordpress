@@ -1,0 +1,605 @@
+
+<style>
+/* MULAGI CONTACT PAGE */
+.mulagi-contact {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+.mulagi-contact * {
+    box-sizing: border-box;
+}
+.mulagi-contact .ct-header {
+    background: #064e36;
+    color: white;
+    padding: 20px;
+}
+.mulagi-contact .ct-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    text-align: center;
+}
+.mulagi-contact .ct-brand img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.mulagi-contact .ct-brand h1 {
+    color: white;
+    font-size: 26px;
+    margin: 5px 0;
+}
+.mulagi-contact .ct-brand p {
+    color: #f1c40f;
+    letter-spacing: 2px;
+    margin: 8px 0;
+}
+.mulagi-contact .ct-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+.mulagi-contact .ct-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.mulagi-contact .ct-nav a:hover,
+.mulagi-contact .ct-nav .ct-active {
+    background: #f1c40f;
+    color: #064e36;
+}
+
+/* CONTACT HERO */
+.mulagi-contact .ct-heading {
+    padding: 75px 25px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        rgba(0,60,40,0.78),
+        rgba(0,60,40,0.78)
+    ), url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+}
+.mulagi-contact .ct-eyebrow {
+    color: #f1c40f;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.mulagi-contact .ct-heading h2 {
+    color: white;
+    font-size: 40px;
+    margin: 15px 0;
+}
+.mulagi-contact .ct-heading p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* CONTACT LAYOUT */
+.mulagi-contact .ct-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #f5f7f5;
+}
+.mulagi-contact .ct-info {
+    flex: 1 1 350px;
+    max-width: 500px;
+}
+.mulagi-contact .ct-info h2 {
+    color: #064e36;
+    font-size: 30px;
+}
+.mulagi-contact .ct-info-intro {
+    line-height: 1.8;
+}
+.mulagi-contact .ct-detail {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.mulagi-contact .ct-icon {
+    background: #064e36;
+    color: #f1c40f;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.mulagi-contact .ct-detail h3 {
+    color: #064e36;
+    margin-top: 0;
+}
+.mulagi-contact .ct-detail p {
+    line-height: 1.7;
+}
+.mulagi-contact .ct-detail a {
+    color: #064e36;
+    overflow-wrap: anywhere;
+}
+.mulagi-contact .ct-welcome {
+    background: #064e36;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+.mulagi-contact .ct-welcome h3 {
+    color: #f1c40f;
+}
+.mulagi-contact .ct-welcome p {
+    line-height: 1.8;
+}
+
+/* FORM */
+.mulagi-contact .ct-form {
+    flex: 1 1 400px;
+    max-width: 650px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.mulagi-contact .ct-form h2 {
+    color: #064e36;
+    font-size: 30px;
+}
+.mulagi-contact .ct-form p {
+    line-height: 1.8;
+}
+.mulagi-contact .ct-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.mulagi-contact .ct-field {
+    flex: 1 1 220px;
+    margin-bottom: 20px;
+}
+.mulagi-contact .ct-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #064e36;
+}
+.mulagi-contact .ct-field input,
+.mulagi-contact .ct-field select,
+.mulagi-contact .ct-field textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    background: white;
+}
+.mulagi-contact .ct-field input:focus,
+.mulagi-contact .ct-field select:focus,
+.mulagi-contact .ct-field textarea:focus {
+    outline: 2px solid #064e36;
+}
+.mulagi-contact .ct-submit {
+    border: none;
+    background: #064e36;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mulagi-contact .ct-submit:hover {
+    background: #f1c40f;
+    color: #064e36;
+}
+.mulagi-contact .ct-form-note {
+    font-size: 14px;
+    color: #555;
+}
+
+/* FOOTER */
+.mulagi-contact .ct-footer {
+    background: #043526;
+    color: white;
+    padding: 45px 20px;
+}
+.mulagi-contact .ct-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+.mulagi-contact .ct-footer-column {
+    flex: 1 1 220px;
+}
+.mulagi-contact .ct-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.mulagi-contact .ct-footer-brand img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+.mulagi-contact .ct-footer h3,
+.mulagi-contact .ct-footer h4 {
+    color: #f1c40f;
+}
+.mulagi-contact .ct-footer h3 {
+    font-size: 18px;
+}
+.mulagi-contact .ct-footer ul {
+    list-style: none;
+    padding: 0;
+}
+.mulagi-contact .ct-footer li {
+    margin: 12px 0;
+}
+.mulagi-contact .ct-footer a {
+    color: white;
+    text-decoration: none;
+}
+.mulagi-contact .ct-footer a:hover {
+    color: #f1c40f;
+}
+.mulagi-contact .ct-bottom {
+    background: #02271c;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    .mulagi-contact .ct-brand h1 {
+        font-size: 21px;
+    }
+    .mulagi-contact .ct-nav {
+        flex-direction: column;
+    }
+    .mulagi-contact .ct-nav a {
+        text-align: center;
+    }
+    .mulagi-contact .ct-heading h2 {
+        font-size: 28px;
+    }
+    .mulagi-contact .ct-heading p {
+        font-size: 16px;
+    }
+    .mulagi-contact .ct-form {
+        padding: 25px;
+    }
+    .mulagi-contact .ct-footer-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+<div class="mulagi-contact">
+
+    <!-- HEADER -->
+    <header class="ct-header">
+
+        <div class="ct-brand">
+
+            <img src="LOGO.png"
+                 alt="Mulagi Vocational Training School Logo">
+
+            <div>
+                <h1>MULAGI VOCATIONAL TRAINING SCHOOL</h1>
+                <p>SUCCESS THROUGH SELF RELIANCE</p>
+            </div>
+
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="ct-nav" aria-label="Main navigation">
+            <a href="/">HOME</a>
+            <a href="/about-us/">ABOUT US</a>
+            <a href="/academics/">ACADEMICS</a>
+            <a href="/gallery/">GALLERY</a>
+            <a href="/contact-us/" class="ct-active">CONTACT US</a>
+        </nav>
+
+    </header>
+
+    <!-- CONTACT HEADING -->
+    <section class="ct-heading">
+
+        <p class="ct-eyebrow">WE ARE HERE TO HELP</p>
+
+        <h2>Get in Touch with Mulagi.</h2>
+
+        <p>
+            Ask us about admissions, courses or life at school.
+            We will be happy to hear from you and help you
+            get the information you need.
+        </p>
+
+    </section>
+
+    <!-- CONTACT INFORMATION AND FORM -->
+    <section class="ct-layout">
+
+        <!-- CONTACT INFORMATION -->
+        <div class="ct-info">
+
+            <p class="ct-eyebrow">CONTACT INFORMATION</p>
+
+            <h2>Reach the School</h2>
+
+            <p class="ct-info-intro">
+                Choose the contact option that works best for you.
+                We welcome enquiries from prospective learners,
+                parents, guardians and members of the community.
+            </p>
+
+            <!-- EMAIL -->
+            <article class="ct-detail">
+
+                <span class="ct-icon" aria-hidden="true">@</span>
+
+                <div>
+                    <h3>Email</h3>
+
+                    <a href="mailto:info@mulagivocationaltraining.ac.ug">
+                        info@mulagivocationaltraining.ac.ug
+                    </a>
+
+                    <p>Send us your questions or requests.</p>
+                </div>
+
+            </article>
+
+            <!-- LOCATION -->
+            <article class="ct-detail">
+
+                <span class="ct-icon" aria-hidden="true">⌖</span>
+
+                <div>
+                    <h3>Visit Us</h3>
+
+                    <p>Mulagi, Uganda</p>
+
+                    <p>
+                        Contact the school for directions
+                        before your visit.
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- OFFICE HOURS -->
+            <article class="ct-detail">
+
+                <span class="ct-icon" aria-hidden="true">◷</span>
+
+                <div>
+                    <h3>Office Hours</h3>
+
+                    <p>Monday to Friday</p>
+
+                    <p>7:30 am - 5:30 pm</p>
+                </div>
+
+            </article>
+
+            <!-- VISIT INFORMATION -->
+            <div class="ct-welcome">
+
+                <h3>Planning a Visit?</h3>
+
+                <p>
+                    Please get in touch during office hours so
+                    the school can help you plan your visit.
+                    We look forward to welcoming you.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form class="ct-form"
+              action="mailto:info@mulagivocationaltraining.ac.ug"
+              method="post"
+              enctype="text/plain">
+
+            <p class="ct-eyebrow">SEND AN ENQUIRY</p>
+
+            <h2>How Can We Help?</h2>
+
+            <p>
+                Complete the form below to prepare a message
+                for the school.
+            </p>
+
+            <!-- NAME AND EMAIL -->
+            <div class="ct-form-row">
+
+                <div class="ct-field">
+
+                    <label for="ct-name">Full Name *</label>
+
+                    <input type="text"
+                           id="ct-name"
+                           name="Full name"
+                           autocomplete="name"
+                           required>
+
+                </div>
+
+                <div class="ct-field">
+
+                    <label for="ct-email">Email Address *</label>
+
+                    <input type="email"
+                           id="ct-email"
+                           name="Email address"
+                           autocomplete="email"
+                           required>
+
+                </div>
+
+            </div>
+
+            <!-- SUBJECT -->
+            <div class="ct-field">
+
+                <label for="ct-subject">Enquiry Topic *</label>
+
+                <select id="ct-subject"
+                        name="Enquiry topic"
+                        required>
+
+                    <option value="" selected disabled>
+                        Select a topic
+                    </option>
+
+                    <option>Admissions</option>
+
+                    <option>Courses and programmes</option>
+
+                    <option>School visit</option>
+
+                    <option>Other enquiry</option>
+
+                </select>
+
+            </div>
+
+            <!-- MESSAGE -->
+            <div class="ct-field">
+
+                <label for="ct-message">Your Message *</label>
+
+                <textarea id="ct-message"
+                          name="Message"
+                          rows="6"
+                          required></textarea>
+
+            </div>
+
+            <!-- SUBMIT -->
+            <button class="ct-submit" type="submit">
+                PREPARE EMAIL &rarr;
+            </button>
+
+            <p class="ct-form-note">
+                This form attempts to open your device's email
+                application. If it does not open, email the school
+                directly using the address shown above.
+            </p>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="ct-footer">
+
+        <div class="ct-footer-container">
+
+            <!-- BRAND -->
+            <div class="ct-footer-column">
+
+                <div class="ct-footer-brand">
+
+                    <img src="LOGO.png" alt="Mulagi School Logo">
+
+                    <div>
+                        <h3>MULAGI VOCATIONAL TRAINING SCHOOL</h3>
+                        <p>Discipline . Knowledge . A Brighter Future</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="ct-footer-column">
+
+                <h4>QUICK LINKS</h4>
+
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about-us/">ABOUT US</a></li>
+                    <li><a href="/academics/">ACADEMICS</a></li>
+                    <li><a href="/gallery/">GALLERY</a></li>
+                    <li><a href="/contact-us/">CONTACT US</a></li>
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+            <div class="ct-footer-column">
+
+                <h4>CONTACT US</h4>
+
+                <ul>
+                    <li>Location: Mulagi, Uganda</li>
+
+                    <li>
+                        <a href="mailto:info@mulagivocationaltraining.ac.ug">
+                        info@mulagivocationaltraining.ac.ug
+                        </a>
+                    </li>
+
+                    <li>Monday - Friday: 7:30am - 5:30pm</li>
+                </ul>
+
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="ct-footer-column">
+
+                <h4>FOLLOW US</h4>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
+                    <li>TikTok</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <div class="ct-bottom">
+
+        <p>
+            &copy; 2026 Mulagi Vocational Training School.
+            Educate a girl child.
+        </p>
+
+    </div>
+
+</div>
